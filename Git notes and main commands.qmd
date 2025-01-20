@@ -66,4 +66,4 @@ MUY IMPORTANTE NO EJECUTAR ESTE COMANDO EN C:!!! SOLAMENTE dentro de la carpeta 
 15. **GitHub CLI** is an open source tool for using GitHub from your computer's command line.
     a) Further info: [GitHub CLI](https://docs.github.com/en/github-cli/github-cli/about-github-cli)
 
-    16. **git ls-files** (Show information about files in the index and the working tree)
+16. **git ls-files** (Show information about files in the index and the working tree). See furthe info to exlude certain files from git tracking.
