@@ -1,0 +1,18 @@
+---
+title: "Untitled"
+format: html
+---
+
+# Day 20/01/2025
+
+
+**useState** gestionar el ciclo de render en REACT
+
+
+Postman publica los datos y genera un endpoit
+Axios coge este endpoit
+axios.get hace la llamada y se pasan a un hook
+RESACT. Hook **useEffect[data]**
+Mapear con JS
+Render
+Using Postamn
