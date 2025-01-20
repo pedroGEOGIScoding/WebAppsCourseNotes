@@ -1,18 +1,16 @@
 ---
-title: "Untitled"
+title: "REACT TOPICS"
 format: html
 ---
-
-# Day 20/01/2025
 
 
 **useState** gestionar el ciclo de render en REACT
 
 
-Postman publica los datos y genera un endpoit
+Postman Mock server publica los datos y genera un endpoit
+React JS
 Axios coge este endpoit
 axios.get hace la llamada y se pasan a un hook
-RESACT. Hook **useEffect[data]**
+REACT. Hook **useEffect[data]**
 Mapear con JS
 Render
-Using Postamn
