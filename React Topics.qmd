@@ -4,11 +4,11 @@ format: html
 ---
 
 
-**useState** gestionar el ciclo de render en REACT
+
 
 
 Postman Mock server publica los datos y genera un endpoit
-React JS
+React JS - **useState** gestionar el ciclo de render en REACT
 Axios coge este endpoit
 axios.get hace la llamada y se pasan a un hook
 REACT. Hook **useEffect[data]**
