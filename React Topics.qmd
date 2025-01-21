@@ -3,9 +3,7 @@ title: "REACT TOPICS"
 format: html
 ---
 
-
-
-
+PRA 1 in two weeks
 
 Postman Mock server publica los datos y genera un endpoit
 React JS - **useState** gestionar el ciclo de render en REACT
