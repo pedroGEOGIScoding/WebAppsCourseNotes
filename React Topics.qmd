@@ -3,6 +3,21 @@ title: "REACT TOPICS"
 format: html
 ---
 
+React components are JavaScript functions
+React components always begin with a capital letter
+In the React components, the **export default** keywords specify the main component in the file.
+For displaying data within theexport default module, varible must be embedded wiithin curly braces.
+React components are enclosed between a shared parent like a <div>...</div> or an empty <>...</> wrapper
+In React, you specify a CSS class with **className**. It works the same way as the HTML **class** attribute
+To add CSS files, the simplest way is to add a <link> tag to the HTML
+**const** is a keyword in JavaScript that is used to declare a variable whose value cannot be changed (or reassigned) after it is defined.
+In JavaScript, **let** is a keyword used to declare variables that are block-scoped and can be re-assigned. Variables declared with let are only accessible within the block they are defined in.
+In JavaScript, **console.log()** is a built-in function used to print messages or output values to the console. 
+
+HTML tags always begin with lowercase
+
+
+
 PRA 1 in two weeks
 step by step
 
