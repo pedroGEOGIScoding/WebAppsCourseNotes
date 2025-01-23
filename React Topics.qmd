@@ -6,7 +6,7 @@ format: html
 React components are JavaScript functions
 React components always begin with a capital letter
 In the React components, the **export default** keywords specify the main component in the file.
-For displaying data within the **export default** module, varible must be embedded wiithin curly braces.
+For displaying data within the **export default** module, varible must be embedded within curly braces.
 React components are enclosed between a shared parent like a <div>...</div> or an empty <>...</> wrapper
 In React, you specify a CSS class with **className**. It works the same way as the HTML **class** attribute
 To add CSS files, the simplest way is to add a <link> tag to the HTML
