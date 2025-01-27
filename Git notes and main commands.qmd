@@ -40,7 +40,8 @@ MUY IMPORTANTE NO EJECUTAR ESTE COMANDO EN C:!!! SOLAMENTE dentro de la carpeta 
     c) **git branch <name of the new branch>** (to add a new branch)
     d) **git branch -M <new-branch-name>** (Used to rename the current branch to a new specified name and forcefully update it if a branch with the new name already exists)
     e) **git checkout <name of the branch you want to move on>** (to move to another branch)
-    f) **git branch -D <name of the branch to delete>**
+    f) **git checkout --track origin (if named as origin)/<branch name>**. Tracking a single remote branch as a local branch
+    g) **git branch -D <name of the branch to delete>**
 
 8. There are two commands to upload to the github repositoty the commits made. These two have to be executed by this order:
     a) first and only has to be done once is: **git remote add <connection name, which normally is names as origin> <github url>** 
