@@ -41,7 +41,9 @@ MUY IMPORTANTE NO EJECUTAR ESTE COMANDO EN C:!!! SOLAMENTE dentro de la carpeta 
     d) **git branch -M <new-branch-name>** (Used to rename the current branch to a new specified name and forcefully update it if a branch with the new name already exists)
     e) **git checkout <name of the branch you want to move on>** (to move to another branch)
     f) **git checkout --track origin (if named as origin)/<branch name>**. Tracking a single remote branch as a local branch
-    g) **git branch -D <name of the branch to delete>**
+    g) **git branch -avv**. To view all branches along with their tracking information. This will show both local and remote branches, including the upstream branches they are tracking.
+    g) **git remote show origin** . Used to display detailed information about the remote repository named "origin." This includes the fetch and push URLs, the tracking branches, and the status of the remote branches compared to your local branches. When you clone a repository, Git automatically names the remote repository "origin," making it the default reference for remote operations.
+    h) **git branch -D <name of the branch to delete>**
 
 8. There are two commands to upload to the github repositoty the commits made. These two have to be executed by this order:
     a) first and only has to be done once is: **git remote add <connection name, which normally is names as origin> <github url>** 
