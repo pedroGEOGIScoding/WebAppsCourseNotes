@@ -34,16 +34,18 @@ MUY IMPORTANTE NO EJECUTAR ESTE COMANDO EN C:!!! SOLAMENTE dentro de la carpeta 
     b) **git remote rm <name>** (Remove the connection to the remote repository called ＜name＞)
     c) **git remote rename <old-name> <new-name>** (Rename a remote connection)
 
-7. **git branch** (checking in which branch you are working on at this moment)
+7. **git branch** (list the local branches and pints out with * in which branch you are working on at this moment)
     a) **git branch -a** (para ver todas las branches)
     b) **git branch -r** (para ver todas las ramas incluso las que estan en remoto)
     c) **git branch <name of the new branch>** (to add a new branch)
     d) **git branch -M <new-branch-name>** (Used to rename the current branch to a new specified name and forcefully update it if a branch with the new name already exists)
     e) **git checkout <name of the branch you want to move on>** (to move to another branch)
-    f) **git checkout --track origin (if named as origin)/<branch name>**. Tracking a single remote branch as a local branch
+    f) **git checkout --track origin (if named as origin)/<branch name>**. This command creates a new local branch with the same name as the remote branch and sets it up to track the remote branch.
+        f1) **git branch --set-upstream-to=origin/<remote-branch> <local-branch>**. Set an existing local branch to track a remote branch.
     g) **git branch -avv**. To view all branches along with their tracking information. This will show both local and remote branches, including the upstream branches they are tracking.
-    g) **git remote show origin** . Used to display detailed information about the remote repository named "origin." This includes the fetch and push URLs, the tracking branches, and the status of the remote branches compared to your local branches. When you clone a repository, Git automatically names the remote repository "origin," making it the default reference for remote operations.
-    h) **git branch -D <name of the branch to delete>**
+    h) **git branch -vv**. This command shows detailed information about your local branches, including which remote branches they're tracking.
+    i) **git remote show origin** . Used to display detailed information about the remote repository named "origin." This includes the fetch and push URLs, the tracking branches, and the status of the remote branches compared to your local branches. When you clone a repository, Git automatically names the remote repository "origin," making it the default reference for remote operations.
+    j) **git branch -D <name of the branch to delete>**
 
 8. There are two commands to upload to the github repositoty the commits made. These two have to be executed by this order:
     a) first and only has to be done once is: **git remote add <connection name, which normally is names as origin> <github url>** 
@@ -52,22 +54,23 @@ MUY IMPORTANTE NO EJECUTAR ESTE COMANDO EN C:!!! SOLAMENTE dentro de la carpeta 
 9. **git push --set-upstream <connection name, which normally is names as origin> <branch-name>** (used to push this branch to a remote repository and set the remote branch as the upstream for the local branch. This means that ***future git push and git pull commands will default to this remote branch*** unless specified otherwise) 
 
 10. **git pull** (download all files from the remote repo)
+11. **or remote in `git branch -r`; do git branch --track `echo $remote | cut -d '/' -f2` remotes/$remote; done**. For start tracking all remote branches.
+12. **for remote in `git branch -r`; do git checkout `echo $remote | cut -d '/' -f2`; git pull; done**. Checkout every branch and pull.
+13. **git clone <github url>** (copy in your local drive all files of remote repo)
 
-11. **git clone <github url>** (copy in your local drive all files of remote repo)
+14. **git reset --hard <commit code>** (to travel back or forward to the specific commit indicated in the commit code)
 
-12. **git reset --hard <commit code>** (to travel back or forward to the specific commit indicated in the commit code)
-
-13. **git merge** (Used to combine two branches. **git merge** takes two commit pointers, usually the branch tips, and will find a common base commit between them. Once Git finds a common base commit it will create a new "merge commit" that combines the changes of each queued merge commit sequenceBefore performing a merge there are a couple of preparation steps to take to ensure the merge goes smoothly)
+15. **git merge** (Used to combine two branches. **git merge** takes two commit pointers, usually the branch tips, and will find a common base commit between them. Once Git finds a common base commit it will create a new "merge commit" that combines the changes of each queued merge commit sequenceBefore performing a merge there are a couple of preparation steps to take to ensure the merge goes smoothly)
     a) Execute **git status** to ensure that HEAD is pointing to the correct merge-receiving branch
     b) Execute **git checkout <name of the receiving branch>** to switch to the receiving branch
     c) Execute **git fetch** to pull the latest remote commits to make sure the receiving branch and the merging branch are up-to-date with the latest remote changes.
     d) Execute **git pull** to make sure that the fetch is completed and the main branch has the latest updates.
     e) **git merge --abort** (to cancel merging)
 
-14. **git tag <name given by the user to define this version> -m "description"** (making final versions)
+16. **git tag <name given by the user to define this version> -m "description"** (making final versions)
     a) **git push --tags** to upload the tags.
 
-15. **GitHub CLI** is an open source tool for using GitHub from your computer's command line.
+17. **GitHub CLI** is an open source tool for using GitHub from your computer's command line.
     a) Further info: [GitHub CLI](https://docs.github.com/en/github-cli/github-cli/about-github-cli)
 
-16. **git ls-files** (Show information about files in the index and the working tree). See furthe info to exlude certain files from git tracking.
+18. **git ls-files** (Show information about files in the index and the working tree). See furthe info to exlude certain files from git tracking.
