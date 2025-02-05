@@ -54,7 +54,7 @@ MUY IMPORTANTE NO EJECUTAR ESTE COMANDO EN C:!!! SOLAMENTE dentro de la carpeta 
 9. **git push --set-upstream <connection name, which normally is names as origin> <branch-name>** (used to push this branch to a remote repository and set the remote branch as the upstream for the local branch. This means that ***future git push and git pull commands will default to this remote branch*** unless specified otherwise) 
 
 10. **git pull** (download all files from the remote repo)
-11. **or remote in `git branch -r`; do git branch --track `echo $remote | cut -d '/' -f2` remotes/$remote; done**. For start tracking all remote branches.
+11. **for remote in `git branch -r`; do git branch --track `echo $remote | cut -d '/' -f2` remotes/$remote; done**. For start tracking all remote branches.
 12. **for remote in `git branch -r`; do git checkout `echo $remote | cut -d '/' -f2`; git pull; done**. Checkout every branch and pull.
 13. **git clone <github url>** (copy in your local drive all files of remote repo)
 
