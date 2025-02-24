@@ -27,6 +27,9 @@ Vite es la herramienta para construir el esqueleto de las web apps https://start
 step by step
 
 Postman Mock server publica los datos y genera un endpoit
+
+![Postman] (/home/pedro/Documents/WebAppsCourseNotes/resources/images/Postman1.PNG)
+
 React JS - **useState** gestionar el ciclo de render en REACT
 Axios coge este endpoit
 axios.get hace la llamada y se pasan a un hook
@@ -37,4 +40,13 @@ Render
 Es importante que hay que installar npm dentro del folder de pronunciationAppFront.
 El comando **npm -v** te muestra la version instalada de npm y si esta instalada
 El comando **npm -i** es para instalar la app npm
-Despues correr el comando npm **run dev** para ejecutar la aplicacion
+Despues correr el comando npm **run dev** para ejecutar la aplicacion.
+
+MAIN HOOK seen so far:
+
+**useState**: sincronizacion, manage simple variables and objects (Managing State from React.dev)
+**useRef**: persistencia entre renders
+**useMemo**: usado para guardar el cache entre renders en procesos o calculos intensos, asi se optimiza la performance en expensive computations
+**useContext**: compartir estados entre componentes
+**useReducer**: manage complexity, volume, and a lot of cases and operations
+**useEffect:** sincronizacion con otros componentes
