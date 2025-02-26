@@ -1,7 +1,4 @@
----
-title: "Git notes and main commands"
-format: html
----
+
 # GIT NOTES & MAIN COMMANDS
 see this for visual info: [Git commands](https://ndpsoftware.com/git-cheatsheet.html#loc=remote_repo;)
 
