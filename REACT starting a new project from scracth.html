@@ -82,8 +82,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="starting-a-react-project-from-scratch" class="level1">
 <h1>Starting a REACT project from scratch</h1>
-<p>The first thing is to go to <a href="https://vite.dev/guide/" class="uri">https://vite.dev/guide/</a> to create a react project with Vite using a template. The code is:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>npm create vite<span class="at">@latest</span> my<span class="op">-</span>vue<span class="op">-</span>app <span class="op">--</span> <span class="op">--</span>template vue</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The first thing is to go to <a href="https://vite.dev/guide/" class="uri">https://vite.dev/guide/</a> to create a react project with Vite using a template. The code to generate the react template is:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>npm create vite<span class="at">@latest</span> my<span class="op">-</span>vue<span class="op">-</span>app <span class="op">--</span> <span class="op">--</span>template react</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Create a folder where the project will be hosted. Next, open that folder with Visual Studio Code. In the VSC terminal, paste the above command and run it to create the react project scaffoldings. This command should be copied and the words <em>my-vue-app</em> changed with the name of the project to work on. Before running this command, the package <strong>create-vite@6.3.0</strong> should be installed. If not, the terminal will ask you to install itself for you.</p>
+<p>Afterward, the react skeleton will be shown in the VSC explorer as shown below:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resources/images/React_Skeleton.png" class="img-fluid figure-img"></p>
+<figcaption>React folder skeleton in VSC</figcaption>
+</figure>
+</div>
+<p>Next, npm should be installed <strong>but</strong> within the project folder, so that it will be need to go with the terminal one more folder below as shown in the picture below:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resources/images/Install%20Vite%20and%20npm%20within%20the%20project%20folder.png" class="img-fluid figure-img"></p>
+<figcaption>Installation of Vite and npm shown in the terminal</figcaption>
+</figure>
+</div>
+<p>After the npm installation, the folder structure has changed with two new files: node-modules and package-lock.json whih have been created by npm.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resources/images/Folder%20Structure%20after%20installing%20npm.png" class="img-fluid figure-img"></p>
+<figcaption>Node-modules and package-lock.json created</figcaption>
+</figure>
+</div>
 </section>
 
 </main>
