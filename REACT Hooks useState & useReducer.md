@@ -6,12 +6,12 @@ Notes: Hooks useState & useReducer
 
 # RULE #1: Only Call Hooks at the Top Level
 
-<aside>
-❗
+:::{.callout-important collapse="false"}
+## This is important
 
 Don’t call Hooks inside loops, conditions, or nested functions.
 
-</aside>
+:::
 
 Always use Hooks at the top level of your React function, before any early returns.
 
@@ -21,12 +21,12 @@ That’s what allows React to correctly preserve the state of Hooks between mult
 
 # RULE #2: Only Call Hooks from React Functions
 
-<aside>
-❗
+:::{.callout-important collapse="false"}
+## This is important
 
 Don’t call Hooks from regular JavaScript functions. Instead, you can:
 
-</aside>
+:::
 
 Call Hooks from React function components.
 Call Hooks from custom Hooks
@@ -48,7 +48,7 @@ The useState hook takes a single argument, which is the initial state for the st
     - **state**: The current state. During the first render, it will match the initialState you have passed.
     - **setState**: The set function that lets you update the state to a different value and trigger a re-render.
     
-    ![image.png](resources/images/useState1.png)
+    ![Basic useState syntax](resources/images/useState1.png)
     
 
 ## The useReducer Hook
@@ -95,6 +95,6 @@ In this example, the reducer function takes in a state object and an action obje
 - If the action type is DECREMENT, the reducer decrements the count property and returns the new state.
 - If the action type is not recognized, the reducer returns the current state without making any changes
 
-![image.png](resources/images/useReducer.png)
+![How useReducer works scheme](resources/images/useReducer.png)
 
-![image.png](resources/images/useReducer2.png)
+![Code flux with useReducer](resources/images/useReducer2.png)

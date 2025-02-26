@@ -10,12 +10,12 @@ React Leaflet provides bindings between React and Leaflet. It does not replace L
 
 Quick start guide:
 
-<aside>
-ℹ️
+:::{.callout-tip collapse="false"}
+## This is important
 
 [https://leafletjs.com/examples.html](https://leafletjs.com/examples.html)
 
-</aside>
+:::
 
 Example:
 
