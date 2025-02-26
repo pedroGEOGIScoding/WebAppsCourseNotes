@@ -1,11 +1,8 @@
 # Miscellaneous
 
-Created: February 24, 2025 6:48 PM
 Class: GENERAL
-ID: CN-10
 
-```
-#KEY IDEAS
+# KEY IDEAS
 
 Tareas de alta energia:
 1. Aprender
@@ -23,4 +20,3 @@ Main books:
 2. Scrum
 3. The Intelligence Trap
 4. The status game
-```
