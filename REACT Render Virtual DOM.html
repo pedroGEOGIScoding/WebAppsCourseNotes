@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>react-starting-a-new-project-from-scracth</title>
+<title>react-render-virtual-dom</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,53 +20,19 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="REACT starting a new project from scracth_files/libs/clipboard/clipboard.min.js"></script>
-<script src="REACT starting a new project from scracth_files/libs/quarto-html/quarto.js"></script>
-<script src="REACT starting a new project from scracth_files/libs/quarto-html/popper.min.js"></script>
-<script src="REACT starting a new project from scracth_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="REACT starting a new project from scracth_files/libs/quarto-html/anchor.min.js"></script>
-<link href="REACT starting a new project from scracth_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="REACT starting a new project from scracth_files/libs/quarto-html/quarto-syntax-highlighting-48ffa3e5b9d089919c6712c39e5b00f2.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="REACT starting a new project from scracth_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="REACT starting a new project from scracth_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="REACT starting a new project from scracth_files/libs/bootstrap/bootstrap-848e9be39fc675988e0688df55a28ce0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="REACT Render Virtual DOM_files/libs/clipboard/clipboard.min.js"></script>
+<script src="REACT Render Virtual DOM_files/libs/quarto-html/quarto.js"></script>
+<script src="REACT Render Virtual DOM_files/libs/quarto-html/popper.min.js"></script>
+<script src="REACT Render Virtual DOM_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="REACT Render Virtual DOM_files/libs/quarto-html/anchor.min.js"></script>
+<link href="REACT Render Virtual DOM_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="REACT Render Virtual DOM_files/libs/quarto-html/quarto-syntax-highlighting-48ffa3e5b9d089919c6712c39e5b00f2.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="REACT Render Virtual DOM_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="REACT Render Virtual DOM_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="REACT Render Virtual DOM_files/libs/bootstrap/bootstrap-848e9be39fc675988e0688df55a28ce0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -80,40 +46,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="starting-a-react-project-from-scratch" class="level1">
-<h1>Starting a REACT project from scratch</h1>
-<p>The first thing is to go to <a href="https://vite.dev/guide/" class="uri">https://vite.dev/guide/</a> to create a react project with Vite using a template. The code to generate the react template is:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>npm create vite<span class="at">@latest</span> my<span class="op">-</span>vue<span class="op">-</span>app <span class="op">--</span> <span class="op">--</span>template react</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Create a folder where the project will be hosted. Next, open that folder with Visual Studio Code. In the VSC terminal, paste the above command and run it to create the react project scaffoldings. This command should be copied and the words <em>my-vue-app</em> changed with the name of the project to work on. Before running this command, the package <strong>create-vite@6.3.0</strong> should be installed. If not, the terminal will ask you to install itself for you.</p>
-<p>Afterward, the react skeleton will be shown in the VSC explorer as shown below:</p>
+<section id="react" class="level1">
+<h1>REACT</h1>
+<p>Class: FRONTEND</p>
+<p>Notes: Render Virtual DOM</p>
+<p>The Document Object Model (DOM) is a <strong>programming interface (UI, user interface)</strong> for web documents. It represents the web page so that programs can change the document structure, style, and content. A web page is a document that can be either displayed in the browser window or as the HTML source. In both cases, it is the same document but the Document Object Model (DOM) representation allows it to be manipulated.</p>
+<p>The Virtual DOM (VDOM) is a pivotal concept in modern web development, particularly leveraged by JavaScript libraries like React. It serves <strong>as an abstract, lightweight copy of the actual Document Object Model (DOM)</strong>, the structural representation of a webpage.</p>
+<p>The virtual DOM Model (DOM) serves as an intermediary between the actual DOM and the application, <strong>allowing for efficient updates without directly manipulating the real DOM.</strong> Instead of manipulating the browser’s DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the real browser DOM.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="resources/images/React_Skeleton.png" class="img-fluid figure-img"></p>
-<figcaption>React folder skeleton in VSC</figcaption>
+<p><img src="resources/images/Render%20Virtual%20DOM1.png" class="img-fluid figure-img"></p>
+<figcaption>image.png</figcaption>
 </figure>
 </div>
-<p>Next, npm should be installed <strong>but</strong> within the project folder, so that it will be need to go with the terminal one more folder below as shown in the picture below:</p>
+<p>The purpose of the VDOM is to optimize rendering and enhance performance by minimizing direct manipulation of the real DOM. Changes are processed on this virtual representation first, reducing unnecessary updates on the real web page.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="resources/images/Install%20Vite%20and%20npm%20within%20the%20project%20folder.png" class="img-fluid figure-img"></p>
-<figcaption>Installation of Vite and npm shown in the terminal</figcaption>
+<p><img src="resources/images/Render%20Virtual%20DOM2.png" class="img-fluid figure-img"></p>
+<figcaption>image.png</figcaption>
 </figure>
 </div>
-<p>After the npm installation, the folder structure has changed with two new files: node-modules and package-lock.json whih have been created by npm.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="resources/images/Folder%20Structure%20after%20installing%20npm.png" class="img-fluid figure-img"></p>
-<figcaption>Node-modules and package-lock.json created</figcaption>
-</figure>
-</div>
-<p>Finally, run the command npm run dev to check that the installation of the react app has been correct.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="resources/images/React%20working.png" class="img-fluid figure-img"></p>
-<figcaption>React working</figcaption>
-</figure>
-</div>
-<p>By cliking in the link of the localhost:5173 the browser will show the icons of react and vite indicating that the installation process has been cone correctly.</p>
+<p>Therefore, when changes occur, the virtual DOM is updated first, updating only the necessary parts through a method called “diffing” and reconciliation, and then it efficiently syncs ONLY those changes with the real DOM, enhancing the overall efficiency and user experience. This optimization helps improve performance by minimizing costly DOM operations and ensuring only necessary updates are made.</p>
 </section>
 
 </main>
