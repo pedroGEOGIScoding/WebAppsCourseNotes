@@ -29,4 +29,13 @@ Finally, run the command npm run dev to check that the installation of the react
 
 By cliking in the link of the localhost:5173 the browser will show the icons of react and vite indicating that the installation process has been cone correctly.
 
-Next, install the react-router-dom with the command **npm install react-router-dom** with the project folder as we are going to implement several tabs in a single page application (SPA).
+Next, install the react-router-dom with the command *npm install react-router-dom* with the project folder as we are going to implement several tabs in a single page application (SPA).
+
+Finally, axios should be installed as well. Then, run the command *npm install axios*.
+
+![Installing axios](resources/images/installing%20axios.png)
+
+At the end, looking at on the file *package.json* all the dependencies installed in the project.
+
+![Package.json dependencies](resources/images/package%20json%20dependencies.png)
+
